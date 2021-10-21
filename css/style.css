@@ -238,22 +238,71 @@ margin-right: 20px;
     gap: 10px;
 }
 .titreListeAppartement{
-    margin: 40px 0px 22px 35px;
+    margin: 35px 0px 22px 35px;
 }
 .hebergements{
     flex: 2;
     background-color: #F2F2F2;
-    flex-basis: 66%;
+    flex-basis: 70%;
     border-radius: 20px;
 }
+.blocHebergements{
+    display: flex;
+    margin-bottom: 10px;
+}
+.blocHebergements2{
+    display: flex;
+    margin-top: 10px;
+}
 .Afficher{
+    margin-top: 10px;
     margin-left: 35px;
 }
+.Card{
+    width: 90%;
+    height: 220px;
+    background-color: white;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px #dddada;
+    cursor: pointer;
+}
+.Card img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.hotelDescription {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 10px;
+}
+.Nomhotel{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.hotelDescription p{
+    margin: 0;
+}
+.fa-star{
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
 
+.blueStar{
+    color: #0065FC;
+}
+
+.greyStar{
+    color: #f2f2f2;
+}
 .populaires{
     flex: 1;
     background-color: #F2F2F2;
-    flex-basis: 33%;
+    flex-basis: 30%;
     border-radius: 20px;
 }
 
