@@ -1,0 +1,262 @@
+/* Générals */
+
+body {
+    max-width: 1380px; /* taille max pour centrer le contenu sur les grands écrans */
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #0065FC;
+    text-decoration: none;
+}
+
+.h1 {
+font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.h3{
+    padding-left: 20px;
+}
+
+.Flexcentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FlexColumncentre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flexColumnAround{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.flexColumnBetween{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.backGris{
+    background-color: #F2F2F2;
+}
+.colorGrey{
+    color: #F2F2F2;
+}
+
+  /* Générals */
+
+/* Header */
+
+.header{
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__logo{
+    display: inline-block;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.header__nav{
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.header__nav__list{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+.header__nav__list__item {
+    flex: 1;
+}
+
+.header__nav__list-item > a {
+    display: block;
+    padding: 40px 40px 10px;
+    border-top: 2px solid transparent;
+}
+.header__nav__list-item > a:hover {
+    color: #0065FC;
+    border-color: #0065FC;
+}
+/* Header */
+
+/* Main */
+
+.content{
+    margin-top: 45px;
+    padding: 0 20px;
+}
+/* Section Recherche et filtre */
+/* RECHERCHE */
+.borderNav{
+    border-top: 1px solid transparent;
+}
+.borderNav:hover{
+    border-top: 1px solid #0065FC;
+    cursor: pointer;
+}
+
+#titreinformatif {
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+.bordureNone{
+    border: none;
+}
+.desktopNone{
+    display: none;
+}
+.borduresearch {
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #F2F2F2;
+}
+.recherche {
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.iconsize {
+    background-color: #F2F2F2;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+.paddingsearch{
+    padding-left: 20%;
+}
+.backBleu{
+    background-color: #0065FC;
+}
+.bouttonSearch{
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+/* RECHERCHE */
+
+/* FILTRES */
+.filtres{
+    display: flex;
+    align-items: center;
+}
+.margFiltres{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.marginFiltreTitre{
+margin-right: 20px;
+}
+.filtreTexticon{
+    border: 3px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.filtreIcon{
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+.filtreTexte{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+    white-space: nowrap;
+}
+.filtreTexticon:hover > .filtreTexte {
+    color: #0065FC;
+}
+.filtreTexticon:hover > .filtreIcon {
+    color: white;
+    background-color: #0065FC;
+}
+
+.infos{
+    display: flex;
+    align-items: center;
+}
+
+.colorBleu {
+    color: #0065FC;
+}
+.parentIcon{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+/* FILTRES */
+
+/* Section Recherche et filtre */
+
+/* Section Hebergements et Populaires */
+
+.listeAppartement{
+    display: flex;
+    gap: 10px;
+}
+.titreListeAppartement{
+    margin: 40px 0px 22px 35px;
+}
+.hebergements{
+    flex: 2;
+    background-color: #F2F2F2;
+    flex-basis: 66%;
+    border-radius: 20px;
+}
+.Afficher{
+    margin-left: 35px;
+}
+
+.populaires{
+    flex: 1;
+    background-color: #F2F2F2;
+    flex-basis: 33%;
+    border-radius: 20px;
+}
+
+/* Section Hebergements et Populaires */
+
+/* Main */

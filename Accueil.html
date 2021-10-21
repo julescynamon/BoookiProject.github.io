@@ -1,12 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 
-  <script src="https://kit.fontawesome.com/51a4ff2180.js" crossorigin="anonymous"></script>
-	<title>Booki</title>
+	<script src="https://kit.fontawesome.com/51a4ff2180.js" crossorigin="anonymous"></script>
+	<title>Booki - Trouvez votre hébergement pour des vacances de rêve</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="stylesessaie.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
+<body>
+<!-- En-tête -->
+	<header class="header">
+<!-- Logo -->		
+		<picture class="header__logo">
+			<source media="(min-width: 768px)" srcset="./images/logo/Booki.png">
+			<img src="./images/logo/Booki_x3.png" alt="Booki">
+		</picture>
+
+<!-- Barrge de navigation -->
+		<nav class="header__nav">
+			<ul class="header__nav__list">
+				<li class="header__nav__list-item">
+				<a href="#hebergements">Hébergements</a>
+				</li>
+				<li class="header__nav__list-item">
+				<a href="#activites">Activités</a>
+				</li>
+			</ul>
+		</nav>		
+
+	</header>
+
+<!-- Contenu principal -->
+
+	<main class="content">
+		<section>
+			<header>
+				<h1 class="h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+			</header>
+				<p>En plein centre ville ou en pleine nature</p>
+
+<!-- Barre de recherche et filtres--> 
+
+			<div class="borduresearch Flexcentre">
+				<div class="iconsize"><i class="fas fa-map-marker-alt"></i></div>
+				<div ><input class="recherche Flexcentre bordureNone paddingsearch" type="search" value="Marseille, France"></div>
+				<div class="backBleu Flexcentre bouttonSearch">
+					<span class="mobileNone">Rechercher</span>
+					<span class="desktopNone"><i class="fas fa-search"></i></span>
+				</div>
+			</div>
+			<div class="filtres mobileFiltreWrap margFiltres ">
+				<div class="marginFiltreTitre"><h3>Filtres</h3></div>
+			<!-- Rajout de 2 div flexAround pour le responsive -->
+			<!-- Div1 -->
+				<div class="flexAround">    
+					<div class="filtreTexticon filtreTexticonIphone flexBetween"><i class="fas fa-money-bill-wave filtreIcon Flexcentre"></i>
+						<div class="filtreTexte Flexcentre">Économique</div>
+					</div>
+					<div class="filtreTexticon flexBetween"><i class="fas fa-child filtreIcon Flexcentre"></i>
+						<div class="filtreTexte Flexcentre">Familial</div>
+					</div>
+				</div>
+			<!-- Div2 -->
+				<div class="mobileFiltreWrap flexAround">     
+					<div class="filtreTexticon flexBetween"><i class="fas fa-heart filtreIcon Flexcentre"></i>
+						<div class="filtreTexte Flexcentre">Romantique</div>
+					</div> 
+					<div class="filtreTexticon flexBetween"><i class="fas fa-dog filtreIcon Flexcentre"></i>
+						<div class="filtreTexte Flexcentre">Animeaux autorisés</div>
+					</div>
+				</div>      
+			</div>
+			<div class="infos">
+				<div class="parentIcon Flexcentre">
+					<i class="fas fa-info fa-xs colorBleu"></i>
+				</div>
+					<p>Plus de 500 logements sont disponibles dans cette ville</p>
+			</div>				
+		</section>
+<!-- Barre de recherche et filtres-->
+
+<!-- Section Hebergements et Populaires-->
+		<section class="listeAppartement">
+			<div class="hebergements">
+				<h3 class="titreListeAppartement">Hébergement à Marseille</h3>
+				<div class="blocHebergements">
+					<a href="#">
+                        <article class="hotelFrame">
+                            <img src="/images/hebergements/2_large/AubergedelaCannebiere.jpg" alt="Photo d'une chambre avec un lit superposé et vu sur la ville">
+                            <div class="hotelDescription flex">
+                                <h3 class="hotelName">Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <span class="euros">25€</span></p>
+                                <div class="hotelRate">
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star greyStar"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a> 
+				</div>
+				<a class="Afficher" href="#"><strong>Afficher plus</strong></a>
+			</div>
+			<div class="populaires">
+				<h3 class="titreListeAppartement">Les plus populaires</h3>
+			</div>
+		</section>
+
+	</main>
+
+</body>
