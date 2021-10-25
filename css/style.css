@@ -99,6 +99,7 @@ p{
     align-items: center;
     height: 100%;
     list-style: none;
+    margin: 0px;
 }
 
 .header__nav__list__item {
@@ -109,6 +110,7 @@ p{
     display: block;
     padding: 40px 40px 10px;
     border-top: 2px solid transparent;
+    line-height: 32px;
 }
 .header__nav__list-item > a:hover {
     color: #0065FC;
@@ -393,7 +395,6 @@ margin-right: 20px;
     margin: 0;
 }
 
-/* Section Hebergements et Populaires */
 /* Activités */
 
 .Activites{
