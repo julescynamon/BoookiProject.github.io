@@ -63,6 +63,8 @@ p{
 }
 .backGris{
     background-color: #F2F2F2;
+    max-width: 1380px;
+    margin: 0 auto;
 }
 .colorGrey{
     color: #F2F2F2;
@@ -79,7 +81,7 @@ p{
 
 .header__logo{
     display: block;
-    width: 100%;
+    width: 90%;
     height: 55px;
     margin-left: 40px;
 }
@@ -109,7 +111,7 @@ p{
 .header__nav__list-item > a {
     display: block;
     padding: 40px 40px 10px;
-    border-top: 2px solid transparent;
+    border-top: 3px solid transparent;
     line-height: 32px;
 }
 .header__nav__list-item > a:hover {
@@ -191,7 +193,7 @@ p{
 }
 .margFiltres{
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 .marginFiltreTitre{
 margin-right: 20px;
@@ -254,7 +256,7 @@ margin-right: 20px;
     gap: 30px;
     margin-bottom: 30px;
 }
-.titreListeAppartement{
+.titreListeAppartement {
     margin: 35px 0px 28px 35px;
 }
 .notehotel{
@@ -267,12 +269,12 @@ margin-right: 20px;
     border-radius: 20px;
 }
 .blocHebergements{
-    width: 90%;
+    width: 100%;
     display: flex;
     margin-bottom: 10px;
 }
 .blocHebergements2{
-    width: 90%;
+    width: 100%;
     display: flex;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -281,9 +283,8 @@ margin-right: 20px;
     margin-left: 35px;
 }
 .lienHebergement{
-    width: 30%;
-    padding-left: 15px;
-    padding-right: 20px;
+    width: 100%;
+    height: 100%;
 }
 .Card{
     width: 100%;
@@ -292,7 +293,7 @@ margin-right: 20px;
     margin-left: 30px;
     margin-right: 20px;
     margin-bottom: 10px;
-    padding: 2%;
+    padding: 5px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #dddada;
     cursor: pointer;
@@ -341,14 +342,8 @@ margin-right: 20px;
     justify-content: space-between;
     align-items: center;
 }
-.notehotelPopulaireLesoleil{
-    padding-top: 55px;
-}
-.notehotelPopulaireHoteltoutbleu{
-    padding-top: 55px;
-}
-.notehotelPopulaireAuCoeur{
-    padding-top: 55px;
+.notehotelPopulaire{
+    margin-top: auto;
 }
 .fa-chart-line {
     font-size: x-large;
@@ -358,9 +353,16 @@ margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
+.lienPop{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 .imgHotelsPopulaire{
     width: 65%;
+    height: 140px;
 }
+
 .CardPopulaire{
     display: flex;
     width: 80%;
@@ -377,15 +379,17 @@ margin-right: 20px;
 }
 .CardPopulaire img{
     width: 100%;
-    height: 140px;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px 0px 0px 15px;
 }
 .hotelDescriptionPopulaire {
+    width: 75%;
     flex-direction: column;
-    justify-content: space-around;
-    flex-basis: 80%;
-    padding: 0px 8px 0px 10px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 30px;
 }
 .NomhotelPopulaire{
     margin: 0;
@@ -427,6 +431,10 @@ margin-right: 20px;
 
 .hauteurTitre{
     height: 30px;
+}
+#activitesLien{
+    margin: 0;
+    padding: 20px;
 }
 .titreActivites{
     display: flex;
@@ -511,39 +519,24 @@ margin-right: 20px;
 /* Footer */
 
 .footer{
-height: 300px;
-width: 100%;
-margin-top: 80px;
+    height: 300px;
+    width: 100%;
+    margin-top: 80px;
+    max-width: 1380px;
+    margin: 0 auto;
 }
 .tailleBlocFoot{
-height: 150px;
+    height: 150px;
 }
 .margBlocFoot1{
-margin-left: 5%;
+    margin-left: 5%;
 }
 .margBlocFoot2{
-margin-right: 12%;
+    margin-right: 12%;
 }
 
 
 /* Responsive */
-
-/* Sur tous types d'écran, quand la largeur de la fenêtre est de 1163px */
-@media only screen and (max-width: 1163px){
-    .notehotelPopulaireLesoleil{
-        padding-top: 40px;
-    }
-    .notehotelPopulaireHoteltoutbleu{
-        padding-top: 40px;
-    }
-}
-
-/* Sur tous types d'écran, quand la largeur de la fenêtre est de 1099px */
-@media only screen and (max-width: 1099px){
-    .notehotelPopulaireAuCoeur{
-        padding-top: 16px;
-    }
-}
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est de 991px */
 @media only screen and (max-width: 991px){
@@ -555,7 +548,7 @@ margin-right: 12%;
         width: 100%;
     }
     .Card{
-        width: 293%;
+        width: 90%;
         margin-bottom: 18px;
     }
     .CardPopulaire{
@@ -604,7 +597,7 @@ margin-right: 12%;
     .mobileFiltreWrap{
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: 2px;
     }
     
@@ -617,6 +610,7 @@ margin-right: 12%;
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est de 768px */
 @media only screen and (max-width: 767px){
+    
     body {
         padding-top: 24px;
     }
@@ -632,9 +626,22 @@ margin-right: 12%;
     }
     .header__logo {
         height: 50px;
-        margin-left: 0;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        margin-left: 40px;
         justify-content: center;
         align-items: center;
+    }
+
+    .h1 {
+        font-weight: 700;
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 8px;
+    }
+    .pIphone {
+        margin-left: 15px;
+        margin-bottom: 40px;
     }
     .header__logo > img{
         justify-content: center;
@@ -669,7 +676,8 @@ margin-right: 12%;
         margin: 0;
     }
     .borduresearch{
-        width: auto;
+        width: 95%;
+        margin-right: 0px;
         border: none;
         display: flex;
         align-items: flex-start;
@@ -678,9 +686,20 @@ margin-right: 12%;
         justify-content: flex-start;
     }
     .recherche{
-        width: 200px;
+        width: 237px;
         margin-right: -10px;
-        border: 1px solid #F2F2F2;
+        border: 1px solid #F2F2F2; 
+        flex: 2 1 auto
+    }
+    .iconsize {
+        background-color: #F2F2F2;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 0 0 10px;
+        flex: 0.1 1 auto;
     }
     .paddingsearch{
         padding-left: 10%;
@@ -688,6 +707,11 @@ margin-right: 12%;
     .bouttonSearch{
         width: 50px;
         border-radius: 15px;
+        flex: 0.1 1 auto;
+    }
+    .titreListeAppartement {
+        margin: 35px 0px 28px 35px;
+        font-size: x-large;
     }
     .hebergements{
         flex: 2;
@@ -696,8 +720,9 @@ margin-right: 12%;
         border-radius: 20px;
     }
     .Card{
-        width: 293%;
-        margin-left: 8px;
+        width: 90%;
+        margin-left: 18px;
+        margin-right: 0;
         margin-bottom: 28px;
     }
     .populaires{
@@ -707,6 +732,14 @@ margin-right: 12%;
     }
     .CardPopulaire{
         width: 90%;
+    }
+    h2{
+        margin-left: 24px;
+    }
+    .Activites {
+        margin-top: 50px;
+        margin-left: 8px;
+        margin-bottom: 50px;
     }
     .blocActivitesIphone{
         flex-direction: column;
@@ -802,38 +835,52 @@ margin-right: 12%;
         align-self: stretch;
     }
     h1{
-        margin-left: 15px;
+        margin-left: 20px;
     }
-    .pIphone{
-        margin-left: 15px;
+    .pIphone {
+        margin-left: 20px;
+        margin-bottom: 36px;
+    }
+    .h3Iphone{
+        margin-top: 31px;   
+        margin-left: 20px;
+        margin-bottom: 10px;
     }
     .borduresearch{
-        margin-left: 15px;
+        margin-left: 20px;
     }
     .filtreTexticon {
         margin-bottom: 20px;
-        margin-left: 4px;
-        margin-right: 10px;
+        margin-left: 11px;
+        margin-right: 2px;
     }
     .infos {
         display: flex;
         align-items: center;
         margin-top: -50px;
-        margin-bottom: 10px;
-        margin-left: 15px;
+        margin-bottom: 19px;
+        margin-left: 20px;
+    }
+    .titreListeAppartement {
+        margin: 35px 0px 28px 35px;
+        font-size: x-large;
     }
     .CardPopulaire {
         width: 79%;
     }
     .Card {
-        width: 276%;
-        margin-left: 8px;
+        width: 80%;
+        margin-left: 20px;
+        margin-right: 0px;
         margin-bottom: 28px;
     }
     .populaires {
         flex: 1;
         background-color: #F2F2F2;
         border-radius: 0px;
+    }
+    h2{
+        margin-left: 13px;
     }
     .Activites {
         margin-top: 50px;
